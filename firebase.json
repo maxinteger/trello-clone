@@ -1,0 +1,9 @@
+{
+  "firebase": "maxinteger-trello-clone",
+  "public": "app",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
