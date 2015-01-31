@@ -1,0 +1,53 @@
+body{
+    font-family: ubuntu;
+    margin-top: 50px;
+}
+
+.main-container{
+    padding: 20px;
+}
+
+.task-list-container{
+
+}
+
+.task-list{
+    float: left;
+    width: 300px;
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.task-list .task-list-header{
+    padding: 7px;
+    padding-top: 0;
+    font-size: 120%;
+    position: relative;
+}
+.task-list .task-list-footer {
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.task-list .task-list-header .task-list-menu{
+
+}
+
+.task-list .tasks {
+    margin: 0;
+}
+
+.task-list .task {
+    margin-bottom: 7px;
+    border-radius: 5px;
+}
+.task-list .task:last-child {
+    margin-bottom: 0;
+}
+
+.task-modal .controls button{
+    width: 100%;
+}

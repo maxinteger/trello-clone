@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Trello clones - sitebuild</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/trello.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="nav-container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Trello clone</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<form class="navbar-form navbar-right" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search">
+				</div>
+				<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+			</form>
+		</div>
+	</div>
+</nav>
+
+<div class="main-container">
+	<div class="task-list-container">
+		<div class="task-list">
+			<div class="task-list-header clearfix">
+				<div class="name pull-left">
+					Task list
+				</div>
+				<div class="task-list-menu pull-right">
+					<div class="dropdown">
+						<a href="#" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<i class="glyphicon glyphicon-chevron-down"></i>
+						</a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="tasks list-group">
+				<a class="task list-group-item" href="#myModal" data-toggle="modal">
+					<span class="task-name">Task 1</span>
+				</a>
+				<a class="task list-group-item" href="#myModal" data-toggle="modal">
+					<span class="task-name">Task 2</span>
+				</a>
+			</div>
+			<div class="task-list-footer">
+				<a href="#">Add new task...</a>
+			</div>
+		</div>
+
+		<div class="task-list">
+			<div class="task-list-header clearfix">
+				<div class="name pull-left">
+					Task list
+				</div>
+				<div class="task-list-menu pull-right">
+					<div class="dropdown">
+						<a href="#" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+							<i class="glyphicon glyphicon-chevron-down"></i>
+						</a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="tasks list-group">
+				<a class="task list-group-item" href="#myModal" data-toggle="modal">
+					<span class="task-name">Task 3</span>
+				</a>
+				<a class="task list-group-item" href="#myModal" data-toggle="modal">
+					<span class="task-name">Task 4</span>
+				</a>
+			</div>
+			<div class="task-list-footer">
+				<a href="#">Add new task...</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog task-modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			</div>
+			<div class="modal-body clearfix">
+				<div class="col-md-9">
+					<h4>Labels</h4>
+					<h4>Activities / comments</h4>
+				</div>
+				<div class="col-md-3 controls">
+					<h4>Add</h4>
+					<button class="btn btn-default btn-sm" type="button">Member</button>
+					<button class="btn btn-default btn-sm" type="button">Labels</button>
+					<button class="btn btn-default btn-sm" type="button">Checklist</button>
+					<button class="btn btn-default btn-sm" type="button">Due date</button>
+					<button class="btn btn-default btn-sm" type="button">Attachment</button>
+					<h4>Actions</h4>
+					<button class="btn btn-default btn-sm" type="button">Move</button>
+					<button class="btn btn-default btn-sm" type="button">Copy</button>
+					<button class="btn btn-default btn-sm" type="button">Subscribe</button>
+					<button class="btn btn-default btn-sm" type="button">Archive</button>
+					<a class="btn btn-link" href="#">More...</a>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
